@@ -43,7 +43,7 @@ class App extends Component {
         return(
             <div>
                 <Artist />
-                <div style={{display:'flex',minWidth:'1300px'}}>
+                <div style={{display:'flex',minWidth:'1300px',justifyContent:'space-around'}}>
                     <DiscoGraphy albums={this.state.albums} changeAlbum={this.changeAlbum}/>
                     <AudioPlayer currentAlbum={this.state.currentAlbum}/>
                 </div>

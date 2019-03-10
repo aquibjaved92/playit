@@ -4,7 +4,7 @@ import '../styles/style.css';
 
 const Discography = (props) =>{
     return(
-        <div style={{width:'50%',minWidth:'700px'}}>
+        <div style={{width:'40%',minWidth:'700px'}}>
             <div>
                 <img src={cd} alt="cd" />
             </div>

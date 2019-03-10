@@ -1,13 +1,14 @@
 .artistPage{
+    width: 85%;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
-    width: 90%;
+    justify-content: space-around;
     min-width: 1300px;
-    margin: auto;
 }
 .aboutArtist{
     position: relative;
-    width: 50%;
+    width: 40%;
 }
 .artistName{
     position: absolute;
@@ -23,14 +24,14 @@
     -o-transform:rotate(-90deg);
 }
 .artistDesc{
-    width: 50%;
-    margin: 0 auto;
+    width: 40%;
     text-align: center;
 }
 .artistDesc ul {
     list-style: none;
     width: fit-content;
-    margin: auto 180px;
+    padding: 0;
+    margin: auto 120px;
 }
 
 .artistDesc ul li {
@@ -146,9 +147,7 @@ padding-left: 0;
 }
 
 .audioPlayer{
-    width: 50%;
-    padding-left: 122px;
-    padding-right: 135px;
+    width: 40%;
     min-width: 600px;
 }
 .audioPlayerbtn{
