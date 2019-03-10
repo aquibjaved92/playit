@@ -5,10 +5,12 @@
     flex-direction: row;
     justify-content: space-around;
     min-width: 1300px;
+    margin-top: 70px;
 }
 .aboutArtist{
     position: relative;
     width: 40%;
+    min-width: 700px;
 }
 .artistName{
     position: absolute;
@@ -26,6 +28,7 @@
 .artistDesc{
     width: 40%;
     text-align: center;
+    min-width: 500px;
 }
 .artistDesc ul {
     list-style: none;
