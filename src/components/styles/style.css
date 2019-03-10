@@ -1,0 +1,198 @@
+.artistPage{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    min-width: 1300px;
+    margin: auto;
+}
+.aboutArtist{
+    position: relative;
+    width: 50%;
+}
+.artistName{
+    position: absolute;
+    font-family: fantasy, sans-serif, serif;
+    font-size: 100px;
+    top: 460px;
+    left: 320px;
+    text-align: center;
+}
+.teamMembers{
+    -webkit-transform:rotate(-90deg);
+    -moz-transform:rotate(-90deg);
+    -o-transform:rotate(-90deg);
+}
+.artistDesc{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.artistDesc ul {
+    list-style: none;
+    width: fit-content;
+    margin: auto 180px;
+}
+
+.artistDesc ul li {
+    display: flex;
+    height: 60px;
+    color: #88665f;
+    opacity: 0.14;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.artistDesc ul li div{
+    width: 165px;
+    min-width: 165px;
+}
+
+.leftList{
+    text-align: right;
+    padding-right: 10px;
+}
+.rightList{
+    text-align: left;
+    padding-left: 10px;
+}
+
+.meetBand{
+    margin-top: 50px;
+}
+.meetBand h3 {
+    font-size: 42px;
+    font-family: sans-serif;
+    margin: 0 0 45px 0;
+}
+.meetBand p{
+    font-size: 25px;
+    line-height: 1.6;
+    text-align: left;
+    width: fit-content;
+    margin: auto;
+}
+.arrows{
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.arrow{
+    font-size: 200px;
+    color: #88665f;
+    cursor: pointer;
+}
+.albumHeading{
+    font-size: 23px;
+    font-family: sans-serif;
+}
+.albumContent ul{
+list-style-type: none;
+padding-left: 0;
+}
+.albumContent ul li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 18px 0px 18px 0;
+    color: #E4DCDC;
+}
+.albumTitle{
+    width: 250px;
+    font-size: 26px;
+    color: #29221E;
+}
+.albumYear{
+    font-size: 26px;
+    color: #29221E;
+}
+
+.listen{
+    font-family: sans-serif;
+    font-weight: 600;
+    background: #E4DCDC;
+    color: #856b61;
+    padding: 7px 15px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.buy{
+    font-family: sans-serif;
+    font-weight: 600;
+    background: #856b61;
+    color: #E4DCDC;
+    padding: 7px 25px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.playerHeader{
+    font-size: 17px;
+    font-family: sans-serif;
+    color: #29221E;
+}
+.albumPlaying{
+    font-size: 29px;
+    margin-bottom: 0;
+    color: #29221E;
+}
+.songTitle{
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-style: italic;
+    color: #856b61;
+}
+
+.audioPlayer{
+    width: 50%;
+    padding-left: 122px;
+    padding-right: 135px;
+    min-width: 600px;
+}
+.audioPlayerbtn{
+    width: 54%;
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    font-size: 45px;
+    color:  #E4DCDC;
+}
+.progress{
+    display: flex;
+    font-size: 30px;
+    color: #856b61;
+    margin-top: 20px;
+}
+
+.progress hr{
+    margin: auto;
+    height: 5px;
+    background: #856b61;
+    border: none;
+    border-radius: 3px;
+}
+.songsList{
+    display:flex;
+    width: 50%;
+    margin-top: 13px;
+    color: #856b61
+}
+
+.songItem{
+    margin: 0 0 -3px 30px;
+    font-family: sans-serif;
+}
+.dots{
+    width: 90%;
+    border-bottom: 2px dotted #856b61;
+}
+.song{
+    display: flex;
+    cursor: pointer;
+}
+
+.active:active{
+    color:#856b61
+}
