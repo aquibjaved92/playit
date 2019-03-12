@@ -3,6 +3,9 @@ import cd from './cd.png';
 import '../styles/style.css';
 
 const Discography = (props) =>{
+    const buy = ()=>{
+        alert("Just Kidding, Its free.....Enjoy")
+    }
     return(
         <div style={{width:'40%',minWidth:'700px'}}>
             <div>
@@ -18,7 +21,7 @@ const Discography = (props) =>{
                                     <div className="albumTitle">{item.title}</div>&#11044;
                                     <div className="albumYear">{item.year}</div>
                                     <div onClick={()=>props.changeAlbum(index)} className="listen">LISTEN</div>
-                                    <div className="buy">BUY</div></li>
+                                    <div onClick={buy} className="buy">BUY</div></li>
                                 )
                             })
                         }

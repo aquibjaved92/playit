@@ -66,7 +66,8 @@ export default class AudioPlayer extends Component {
             selectedSongTitle: "Clouds In The Forest",           //current playing song title
             playingOpacity: 1,
             pausedOpacity: 0.2,
-            play: true                                           // to change the play/pause button on the music player
+            play: true,
+            index: 0                                          // to change the play/pause button on the music player
         }
     }
 
@@ -74,7 +75,28 @@ export default class AudioPlayer extends Component {
         this.setState({
             selectedSongId : this.state.songs[index].songId,
             selectedSongTitle: this.state.songs[index].songTitle,
+            index : index
         })
+    }
+
+    nextSong(index){
+        if(index<this.state.songs.length-1){
+            this.setState({
+                selectedSongId : this.state.songs[index+1].songId,
+                selectedSongTitle: this.state.songs[index+1].songTitle,
+                index: index+1
+            })
+        }
+    }
+
+    prevSong(index){
+        if(index>0){
+            this.setState({
+                selectedSongId : this.state.songs[index-1].songId,
+                selectedSongTitle: this.state.songs[index-1].songTitle,
+                index: index-1
+            })
+        }
     }
      
     togglePlay(){                                             // change play button to pause and vice-versa
@@ -114,14 +136,14 @@ export default class AudioPlayer extends Component {
                     </div>
                     <div style={{marginTop:"87px"}}>
                         <div className="audioPlayerbtn">
-                            <i className="fa fa-backward active" aria-hidden="true"></i>
+                            <i onClick={()=>this.prevSong(this.state.index)} className="fa fa-backward active" aria-hidden="true"></i>
                             <div onClick={() => this.togglePlay()}>
                                 {this.state.play ? 
                                     <i className="fa fa-pause active" aria-hidden="true"></i> :
                                     <i className="fa fa-play active" aria-hidden="true"></i>
                                 }
                             </div>
-                            <i className="fa fa-forward active" aria-hidden="true"></i>
+                            <i onClick={()=>this.nextSong(this.state.index)} className="fa fa-forward active" aria-hidden="true"></i>
                         </div>
                         <div className="progress">
                             <hr style={{width:'40%',background:'#E4DCDC'}}/>
