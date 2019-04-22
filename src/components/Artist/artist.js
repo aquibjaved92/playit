@@ -74,7 +74,7 @@ class Artist extends Component {
         const id = this.state.currentMemberId;
         const members = this.state.members.map((item)=>{
             return(
-                <li key={item.id} style={id===item.id ? {opacity:1} : {opacity: 0.3}}>
+                <li key={item.id} style={id===item.id ? {opacity:1} : {opacity: 0.3}} onClick={() => this.setState({currentMemberId:item.id})}>
                     <div className="leftList">{item.FirstName}&nbsp;{item.SecondName}</div>
                     &#11044;
                     <div className="rightList">{item.role}</div>
